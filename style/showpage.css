@@ -390,7 +390,7 @@ header .sub-menu:hover {
   }
   .showHero .smaller {
     font-size: xx-large;
-    margin: 160px 0px 0px 180px;
+    margin: 21vw 0vw 0vw 9vw;
   }
   .showHero .normal {
     margin: 48px 0px 0px 180px;
@@ -421,6 +421,7 @@ header .sub-menu:hover {
   }
   .shows .table {
     display: block;
+    font-size: large;
     margin: 0px 0px 0px 120px;
   }
   .shows .table th {
