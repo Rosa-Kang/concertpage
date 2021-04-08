@@ -6,15 +6,12 @@ axios.get(apiURL).then(function(response) {
   let after = feedback.sort(
     (a, b) => parseFloat(b.timestamp) - parseFloat(a.timestamp)
   );
-  console.log(after);
-  let i = 0;
-  after.forEach(function(review) {
-    let imgSrc;
-    if (review.timestamp > 1530744338878) {
-      imgSrc = "../images/Mohan-muruge.jpg";
-    } else {
-      imgSrc = '../images/alexander-popov-522100-unsplash.jpg';
-    }
+  let i =0;
+  after.map(function(review) {
+    if (review.timestamp < 1617923314961) {
+      imgSrc = `../images/${review.id}.jpg`}
+      else {
+      imgSrc = "../images/Mohan-muruge.jpg"}
     let existingComment = new commentsData(
       convertTime(review.timestamp),
       review.name,
