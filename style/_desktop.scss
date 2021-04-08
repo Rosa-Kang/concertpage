@@ -1,0 +1,190 @@
+/** desktop **/ /** desktop **/ /** desktop **/ /** desktop **/ /** desktop **/
+
+@media screen and (min-width: 1280px) {
+  header {
+    .header--logo {
+      padding: 0px 5px 0px 76px;
+    }
+
+    .header--logo img {
+      height: 7vw;
+    }
+
+    .sub-menu {
+    font-size: 1.5vw;
+    padding: 1.8em 0em;
+    margin: 0px 0px 0px 91px;
+    }
+  }
+
+  h1 {
+    margin: 48px 180px;
+    font-size: 3vw;
+  }
+
+  .hero h1 {
+    font-size: 4.5vw;
+  }
+
+  .Main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 180px;
+    margin-right: 180px;
+
+    .perform {
+      padding: 0px 68px;
+
+      .perform__img {
+        height: 31.5vw;
+      }
+    }
+  }
+
+  .phrase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    width: 100%;
+
+    h2 {
+      font-size: 1.7vw;
+      margin-left: 92px;
+      margin-right: 92px;
+    }
+
+    .phrase--one {
+      margin-top: 48px;
+      margin-bottom: 40px;
+    }
+
+    .phrase--two {
+      font-size: 1.5vw;
+      margin-top: 0px;
+      margin-bottom: 56px;
+    }
+
+    .phrase--three {
+      margin-top: 0px;
+      margin-bottom: 32px;
+    }
+
+    .phrase--four {
+      display: flex;
+      flex-direction: row;
+      margin: 0px 72px 48px 72px;
+
+      h4 {
+        font-size: 0.96vw;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .gallery {
+    h1 {
+      margin: 0px 180px;
+      padding: 16px 0px 24px 0px;
+    }
+    .gallery--img {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 40px 180px 0px 180px;
+
+      .gallery--img__bottom {
+        padding-bottom: 16px;
+      }
+    }
+    img {
+      width: 31.8%;
+      height: 100%;
+      margin: 0px 0px 24px 0px;
+    }
+  }
+
+  .comment {
+    .comment--title {
+      margin: 0px 180px;
+      padding-top: 48px;
+      font-size: 40px;
+    }
+    .comment--new {
+      width: 37%;
+      margin: 56px 456px 0px 456px;
+      font-size: large;
+
+      #myButton {
+        height: 3.5vw;
+        align-self: flex-end;
+      }
+    }
+    #addComment {
+      margin: 0px 456px !important;
+    }
+    #addComment,
+    #existingComment {
+      width: 37%;
+      margin: 0px 456px 40px 456px;
+      font-size: 0.9827vw;
+    }
+  }
+
+  .footer {
+    .footer--myfooter {
+      margin-left: 180px;
+      margin-right: 180px;
+
+      .footer--myfooter__title {
+        margin: 8px 30px 8px 0px;
+        font-size: 2.7vw;
+      }
+
+      .footer--myfooter__images {
+        padding-left: 8px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 16%;
+        margin: 25px 0px;
+
+        img {
+          height: 1.8vw;
+          margin-left: 16px;
+        }
+      }
+
+      .footer--myfooter__logo {
+        justify-self: flex-end;
+        width: auto;
+        margin-top: 0;
+        margin-left: auto;
+
+        img{
+          height: 7vw;
+        }
+      }
+    }
+    .footer--text {
+      display: flex;
+      justify-content: space-between;
+      width: 53%;
+      margin: 32px 180px 24px 180px;
+
+      .thick {
+        margin: 16px 0px;
+      }
+      .slim {
+        margin: 16px 0px 16px 0px;
+      }
+    }
+    .slim--copyright {
+      margin: 24px 0px 0px 180px;
+      width: 69%;
+    }
+  }
+}

@@ -1,0 +1,177 @@
+/**Tablet ---- **/
+
+@media screen and (min-width: 768px) {
+  header {
+    flex-direction: row;
+    padding: 0px 0px 0px 24px;
+
+    .header--logo {
+      flex-basis: 0;
+    }
+
+    .header--logo img {
+      height: 7vw;
+    }
+
+    .sub-menu {
+    font-size: 2.2vw;
+    padding: 1.1em 0em;
+    width: unset;
+    margin: 0px 0px 0px 50px;
+    }
+  }
+
+  h1 {
+    font-size: 4.5vw;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .hero h1 {
+    font-size: 6vw;
+  }
+
+  .perform {
+    margin-left: 24px;
+    margin-right: 24px;
+
+    .perform__img {
+      height: 47.2vw;
+      object-fit: cover;
+      object-position: bottom;
+    }
+  }
+
+  .phrase {
+    width: 100%;
+
+    .phrase--two {
+      font-size: 2.6vw;
+    }
+
+    h2 {
+      font-family: myBold;
+      font-size: 3.2vw;
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+    .phrase--four {
+      display: flex;
+      flex-direction: row;
+      margin: 24px 12px 40px 12px;
+
+      h4 {
+        font-size: 1.91vw;
+        margin: 0px 12px;
+      }
+    }
+  }
+
+  .gallery {
+    .gallery--img {
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 36px 24px 0px 24px;
+      .gallery--img__bottom {
+        padding-bottom: 16px;
+      }
+    }
+    img {
+      width: 31.2%;
+      height: 100%;
+      margin-bottom: 24px;
+    }
+  }
+
+  .comment {
+    .comment--new {
+      margin: 32px 124px 0px 124px;
+      padding-bottom: 18px;
+      font-size: large;
+
+      .comment--new__name {
+        margin: 0px 0px 0px 25px;
+
+        label {
+          margin-bottom: 6px;
+        }
+        #inputName,
+        #inputComment {
+          font-size: smaller;
+          margin-bottom: 24px;
+        }
+
+        #inputComment {
+          height: 90px;
+        }
+
+        #myButton {
+          width: 160px;
+          align-self: flex-end;
+        }
+      }
+    }
+    #addComment {
+      margin: 0px 124px !important;
+    }
+
+    #addComment,
+    #existingComment {
+      margin: 0px 124px 40px 124px;
+      font-size: 1.91vw;
+
+      .existingBox {
+        #nameDate {
+          justify-content: normal;
+
+          #name {
+            font-family: myDemi;
+          }
+
+          #date {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    .footer--myfooter {
+      display: flex;
+      flex-direction: row;
+      margin-left: 24px;
+      margin-right: 24px;
+
+      .footer--myfooter__title {
+        margin: 8px 0px 8px 0px;
+        font-size: 36px;
+      }
+
+      .footer--myfooter__images {
+    align-items: flex-start;
+    width: 124px;
+    padding: 6px 20px;
+      }
+
+      .footer--myfooter__logo {
+        margin-top: 16px;
+        margin-left: auto;
+
+        img{
+          height: 109px;
+        }
+      }
+    }
+    .footer--text {
+      display: flex;
+      justify-content: space-between;
+      margin: 24px;
+    }
+    .slim--copyright {
+      margin: 24px;
+      width: 69%;
+    }
+  }
+}

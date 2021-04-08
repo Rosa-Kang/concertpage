@@ -1,0 +1,758 @@
+@font-face {
+  font-family: Avenir;
+  src: url("../Images-2/Images/Linotype - AvenirNextLTPro-UltLt.otf");
+}
+
+@font-face {
+  font-family: myBold;
+  src: url("../Images-2/Images/Linotype - AvenirNextLTPro-Bold.otf");
+}
+
+@font-face {
+  font-family: myDemi;
+  src: url("../Images-2/Images/Linotype - AvenirNextLTPro-Medium.otf");
+}
+
+@font-face {
+  font-family: myTB;
+  src: url("../Images-2/Images/Linotype - AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: myTableHead;
+  src: url("../images/Font/Linotype - AvenirNextLTPro-Medium.otf");
+}
+
+@font-face {
+  font-family: mySpan;
+  src: url("../images/Font/Linotype - AvenirNextLTPro-Bold.otf");
+}
+
+@font-face {
+  font-family: myTableData;
+  src: url("../images/Font/Linotype - AvenirNextLTPro-Thin.otf");
+}
+
+.perform, .phrase h2 {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+body {
+  font-family: Avenir;
+  margin: 0px;
+}
+
+/* MOBILE ---------------- ------------ MOBILE MOBILE MOBILE */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #323232;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .header--logo {
+  text-align: center;
+  width: 50%;
+  padding-top: 5px;
+}
+
+header .header--logo img {
+  height: 25vw;
+}
+
+header .header--right {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .sub-menu {
+  padding: 1rem;
+  font-size: 4vw;
+  width: 50%;
+  text-align: center;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header .header--right .sub-menu:hover {
+  border-bottom: solid #ffffff;
+}
+
+.hero {
+  width: 100%;
+  height: 47vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.5)), to(rgba(50, 50, 50, 0.5))), url(../images/Images/concert2.jpg);
+  background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url(../images/Images/concert2.jpg);
+  background-position: bottom;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero h1 {
+  color: white;
+}
+
+h1 {
+  font-size: 6.5vw;
+  font-family: mybold;
+  margin: 32px 16px 24px 16px;
+}
+
+.perform .perform__img {
+  width: 100%;
+}
+
+.phrase h2 {
+  font-family: myDemi;
+  font-size: 5vw;
+}
+
+.phrase .phrase--one {
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.phrase .phrase--two {
+  font-family: myTB;
+  font-size: 4.5vw;
+  margin-top: 32px;
+  margin-bottom: 40px;
+}
+
+.phrase .phrase--three {
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.phrase .phrase--four {
+  margin: 24px 16px 16px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+h4 {
+  font-size: 3.9vw;
+  margin: 0px 0px 24px 0px;
+}
+
+.gallery {
+  background-color: #fafafa;
+  padding-top: 32px;
+}
+
+.gallery h1 {
+  margin: 0px 16px 24px 16px;
+}
+
+.gallery .gallery--img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin: 16px 16px 0px 16px;
+}
+
+.gallery .gallery--img .gallery--img__bottom {
+  padding-bottom: 24px;
+}
+
+.gallery img {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.comment h5 {
+  margin: 0px;
+}
+
+.comment .comment--new {
+  margin: 16px 16px 0px 16px;
+  padding-bottom: 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: solid 1px #e1e1e1;
+}
+
+.comment .comment--new .comment--new__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin: 0px 16px;
+  float: right;
+}
+
+.comment .comment--new .comment--new__name label {
+  font-family: myTableHead;
+  color: #afafaf;
+  font-size: small;
+  margin-bottom: 6px;
+}
+
+.comment .comment--new .comment--new__name input:focus,
+.comment .comment--new .comment--new__name textarea:focus {
+  border: solid 1.5px #323232 !important;
+  outline: none;
+}
+
+.comment .comment--new .comment--new__name #inputName,
+.comment .comment--new .comment--new__name #inputComment {
+  padding: 0px;
+  margin-bottom: 10px;
+  background-color: #fafafa;
+  border: solid 1px #e1e1e1;
+  border-radius: 4px;
+}
+
+.comment .comment--new .comment--new__name #inputName {
+  height: 32px;
+}
+
+.comment .comment--new .comment--new__name #myButton {
+  padding: 0px;
+  height: 42px;
+  font-size: smaller;
+  background-color: #323232;
+  color: white;
+  border-radius: 4px;
+}
+
+.comment img {
+  width: 48px;
+  height: 48px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.comment #addComment {
+  margin: 0px 16px !important;
+}
+
+.comment #addComment,
+.comment #existingComment {
+  font-size: 4.345vw;
+  margin: 0px 16px 40px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.comment #addComment .existingBox,
+.comment #existingComment .existingBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 24px 0px;
+  border-bottom: solid 1px #e1e1e1;
+}
+
+.comment #addComment .existingBox #avatar,
+.comment #existingComment .existingBox #avatar {
+  padding-right: 16px;
+}
+
+.comment #addComment .existingBox #letters,
+.comment #existingComment .existingBox #letters {
+  width: 100%;
+}
+
+.comment #addComment .existingBox #nameDate,
+.comment #existingComment .existingBox #nameDate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: myDemi;
+}
+
+.comment #addComment .existingBox #date,
+.comment #existingComment .existingBox #date {
+  color: #afafaf;
+}
+
+.comment #addComment #text,
+.comment #existingComment #text {
+  margin: 16px 0px 0px 0px;
+}
+
+.footer {
+  background-color: #323232;
+  color: white;
+  padding: 40px 0px;
+}
+
+.footer .footer--myfooter__title {
+  font-family: myBold;
+  margin: 0px 16px 24px 12px;
+}
+
+.footer .footer--myfooter__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 16px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 37%;
+}
+
+.footer .footer--text {
+  margin: 32px 16px 24px 12px;
+  font-size: 0.9em;
+}
+
+.footer .footer--text .thick {
+  font-family: myDemi;
+  margin: 1em 0em;
+}
+
+.footer .footer--text .slim {
+  margin: 1em 0em;
+}
+
+.footer .slim--copyright {
+  margin: 32px 16px 24px 12px;
+  width: 67%;
+  font-size: 0.9em;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 388px) {
+  .comment--new__name {
+    width: 78% !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer--myfooter__logo {
+    display: none;
+  }
+}
+
+/* In the Tablet */
+/**Tablet ---- **/
+@media screen and (min-width: 768px) {
+  header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0px 0px 0px 24px;
+  }
+  header .header--logo {
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+  }
+  header .header--logo img {
+    height: 7vw;
+  }
+  header .sub-menu {
+    font-size: 2.2vw;
+    padding: 1.1em 0em;
+    width: unset;
+    margin: 0px 0px 0px 50px;
+  }
+  h1 {
+    font-size: 4.5vw;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .hero h1 {
+    font-size: 6vw;
+  }
+  .perform {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .perform .perform__img {
+    height: 47.2vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
+  .phrase {
+    width: 100%;
+  }
+  .phrase .phrase--two {
+    font-size: 2.6vw;
+  }
+  .phrase h2 {
+    font-family: myBold;
+    font-size: 3.2vw;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .phrase .phrase--four {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 24px 12px 40px 12px;
+  }
+  .phrase .phrase--four h4 {
+    font-size: 1.91vw;
+    margin: 0px 12px;
+  }
+  .gallery .gallery--img {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 36px 24px 0px 24px;
+  }
+  .gallery .gallery--img .gallery--img__bottom {
+    padding-bottom: 16px;
+  }
+  .gallery img {
+    width: 31.2%;
+    height: 100%;
+    margin-bottom: 24px;
+  }
+  .comment .comment--new {
+    margin: 32px 124px 0px 124px;
+    padding-bottom: 18px;
+    font-size: large;
+  }
+  .comment .comment--new .comment--new__name {
+    margin: 0px 0px 0px 25px;
+  }
+  .comment .comment--new .comment--new__name label {
+    margin-bottom: 6px;
+  }
+  .comment .comment--new .comment--new__name #inputName,
+  .comment .comment--new .comment--new__name #inputComment {
+    font-size: smaller;
+    margin-bottom: 24px;
+  }
+  .comment .comment--new .comment--new__name #inputComment {
+    height: 90px;
+  }
+  .comment .comment--new .comment--new__name #myButton {
+    width: 160px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .comment #addComment {
+    margin: 0px 124px !important;
+  }
+  .comment #addComment,
+  .comment #existingComment {
+    margin: 0px 124px 40px 124px;
+    font-size: 1.91vw;
+  }
+  .comment #addComment .existingBox #nameDate,
+  .comment #existingComment .existingBox #nameDate {
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+  }
+  .comment #addComment .existingBox #nameDate #name,
+  .comment #existingComment .existingBox #nameDate #name {
+    font-family: myDemi;
+  }
+  .comment #addComment .existingBox #nameDate #date,
+  .comment #existingComment .existingBox #nameDate #date {
+    margin-left: 10px;
+  }
+  .footer .footer--myfooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .footer .footer--myfooter .footer--myfooter__title {
+    margin: 8px 0px 8px 0px;
+    font-size: 36px;
+  }
+  .footer .footer--myfooter .footer--myfooter__images {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 124px;
+    padding: 6px 20px;
+  }
+  .footer .footer--myfooter .footer--myfooter__logo {
+    margin-top: 16px;
+    margin-left: auto;
+  }
+  .footer .footer--myfooter .footer--myfooter__logo img {
+    height: 109px;
+  }
+  .footer .footer--text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 24px;
+  }
+  .footer .slim--copyright {
+    margin: 24px;
+    width: 69%;
+  }
+}
+
+/* In the Desktop */
+/** desktop **/
+/** desktop **/
+/** desktop **/
+/** desktop **/
+/** desktop **/
+@media screen and (min-width: 1280px) {
+  header .header--logo {
+    padding: 0px 5px 0px 76px;
+  }
+  header .header--logo img {
+    height: 7vw;
+  }
+  header .sub-menu {
+    font-size: 1.5vw;
+    padding: 1.8em 0em;
+    margin: 0px 0px 0px 91px;
+  }
+  h1 {
+    margin: 48px 180px;
+    font-size: 3vw;
+  }
+  .hero h1 {
+    font-size: 4.5vw;
+  }
+  .Main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+  .Main .perform {
+    padding: 0px 68px;
+  }
+  .Main .perform .perform__img {
+    height: 31.5vw;
+  }
+  .phrase {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0px;
+    width: 100%;
+  }
+  .phrase h2 {
+    font-size: 1.7vw;
+    margin-left: 92px;
+    margin-right: 92px;
+  }
+  .phrase .phrase--one {
+    margin-top: 48px;
+    margin-bottom: 40px;
+  }
+  .phrase .phrase--two {
+    font-size: 1.5vw;
+    margin-top: 0px;
+    margin-bottom: 56px;
+  }
+  .phrase .phrase--three {
+    margin-top: 0px;
+    margin-bottom: 32px;
+  }
+  .phrase .phrase--four {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0px 72px 48px 72px;
+  }
+  .phrase .phrase--four h4 {
+    font-size: 0.96vw;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .gallery h1 {
+    margin: 0px 180px;
+    padding: 16px 0px 24px 0px;
+  }
+  .gallery .gallery--img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 40px 180px 0px 180px;
+  }
+  .gallery .gallery--img .gallery--img__bottom {
+    padding-bottom: 16px;
+  }
+  .gallery img {
+    width: 31.8%;
+    height: 100%;
+    margin: 0px 0px 24px 0px;
+  }
+  .comment .comment--title {
+    margin: 0px 180px;
+    padding-top: 48px;
+    font-size: 40px;
+  }
+  .comment .comment--new {
+    width: 37%;
+    margin: 56px 456px 0px 456px;
+    font-size: large;
+  }
+  .comment .comment--new #myButton {
+    height: 3.5vw;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .comment #addComment {
+    margin: 0px 456px !important;
+  }
+  .comment #addComment,
+  .comment #existingComment {
+    width: 37%;
+    margin: 0px 456px 40px 456px;
+    font-size: 0.9827vw;
+  }
+  .footer .footer--myfooter {
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+  .footer .footer--myfooter .footer--myfooter__title {
+    margin: 8px 30px 8px 0px;
+    font-size: 2.7vw;
+  }
+  .footer .footer--myfooter .footer--myfooter__images {
+    padding-left: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 16%;
+    margin: 25px 0px;
+  }
+  .footer .footer--myfooter .footer--myfooter__images img {
+    height: 1.8vw;
+    margin-left: 16px;
+  }
+  .footer .footer--myfooter .footer--myfooter__logo {
+    justify-self: flex-end;
+    width: auto;
+    margin-top: 0;
+    margin-left: auto;
+  }
+  .footer .footer--myfooter .footer--myfooter__logo img {
+    height: 7vw;
+  }
+  .footer .footer--text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 53%;
+    margin: 32px 180px 24px 180px;
+  }
+  .footer .footer--text .thick {
+    margin: 16px 0px;
+  }
+  .footer .footer--text .slim {
+    margin: 16px 0px 16px 0px;
+  }
+  .footer .slim--copyright {
+    margin: 24px 0px 0px 180px;
+    width: 69%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

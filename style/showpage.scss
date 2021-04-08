@@ -1,0 +1,511 @@
+@font-face {
+  font-family: Avenir;
+  src: url("../Images-2/Font/Linotype - AvenirNextLTPro-UltLt.otf");
+}
+
+@font-face {
+  font-family: myBold;
+  src: url("../Images-2/Font/Linotype - AvenirNextLTPro-Bold.otf");
+}
+
+@font-face {
+  font-family: myDemi;
+  src: url("../Images-2/Font/Linotype - AvenirNextLTPro-Medium.otf");
+}
+
+@font-face {
+  font-family: myTB;
+  src: url("../Images-2/Font/Linotype - AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: myTableHead;
+  src: url("../Images-2/Font/Linotype - AvenirNextLTPro-Medium.otf");
+}
+
+@font-face {
+  font-family: mySpan;
+  src: url("../Images-2/Font/Linotype - AvenirNextLTPro-Bold.otf");
+}
+
+@font-face {
+  font-family: myTableData;
+  src: url("../Images-2/Font/Linotype - AvenirNextLTPro-Thin.otf");
+}
+
+%leftRight {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+%footerLeft {
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+body {
+  font-family: Avenir;
+  margin: 0px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #323232;
+  min-height: 80px;
+  justify-content: center;
+
+  .header--logo {
+    text-align: center;
+    width: 50%;
+    padding-top: 5px;
+  }
+
+  .header--logo img {
+    height: 25vw;
+  }
+
+  .header--right {
+    width: 100%;
+    display: flex;
+  }
+
+  .sub-menu {
+    padding: 1rem;
+    font-size: 4vw;
+    width: 50%;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .sub-menu:hover {
+    border-bottom: solid #ffffff;
+  }
+}
+
+.showHero {
+  width: 100%;
+  height: 147.5vw;
+  background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)),
+    url(../images/hanny-naibaho-273756-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  span {
+    color: white;
+    font-family: mySpan;
+  }
+
+  .smaller {
+    font-family: myTableHead;
+    font-size: 16px;
+    margin: 64px 0px 0px 16px;
+  }
+
+  .normal {
+    font-size: 10.5vw;
+    width: 90%;
+    margin: 16px 0px 0px 16px;
+  }
+  #music {
+    margin: 64px auto 0px;
+    width: 91%;
+    height: 30vw;
+    text-align: center;
+  }
+
+  .normalMusic {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.shows {
+  margin: 0px 16px;
+
+  h1 {
+    font-size: 6.5vw;
+    font-family: mySpan;
+    margin: 32px 0px 40px 0px;
+  }
+
+  .table {
+    display: block;
+    font-size: small;
+    width: 100%;
+    margin: 0 auto;
+
+    .table--summary {
+      margin-bottom: 32px;
+      padding: 0px;
+
+      .table--one {
+        width: 100%;
+        margin-top: 16px;
+        border-bottom: 1px solid #e1e1e1;
+      }
+    }
+    th {
+      font-family: myTableHead;
+      color: #afafaf;
+    }
+
+    tr {
+      text-align: left;
+    }
+
+    td {
+      padding: 16px 0px 24px 0px;
+      font-family: myTableData;
+    }
+    #fontDate {
+      font-family: myTableHead;
+      color: black;
+    }
+  }
+
+  #buyTable {
+    padding: 0;
+  }
+
+  #buyTicket {
+    width: 100%;
+    height: 48px;
+    margin: 8px 0px 16px 0px;
+    font-size: 4vw;
+    background-color: #323232;
+    color: white;
+    border-radius: 4px;
+  }
+}
+
+.footer {
+  background-color: #323232;
+  color: white;
+  padding: 40px 0px;
+
+  .footer--myfooter__title {
+    font-family: myBold;
+    margin: 0px 16px 24px 12px;
+  }
+
+  .footer--myfooter__images {
+    display: flex;
+    margin: 16px;
+    justify-content: space-between;
+    width: 37%;
+  }
+
+  .footer--text {
+    margin: 32px 16px 24px 12px;
+    font-size: 0.9em;
+
+    .thick {
+      font-family: myDemi;
+      margin: 1em 0em;
+    }
+    .slim {
+      margin: 1em 0em;
+    }
+  }
+
+  .slim--copyright {
+    margin: 32px 16px 24px 12px;
+    width: 67%;
+    font-size: 0.9em;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .table--zero {
+    display: none;
+  }
+
+  .footer--myfooter__logo {
+    display: none;
+  }
+}
+
+/*TABLET --------------------------------------------------*/
+
+@media only screen and (min-width: 768px) {
+    header {
+    flex-direction: row;
+    padding: 0px 0px 0px 24px;
+
+    .header--logo {
+      flex-basis: 0;
+    }
+
+    .header--logo img {
+      height: 7vw;
+    }
+
+    .sub-menu {
+    font-size: 2.2vw;
+    padding: 1.1em 0em;
+    width: unset;
+    margin: 0px 0px 0px 50px;
+    }
+  }
+
+  .showHero {
+    width: 100%;
+    height: 87.3vw;
+
+    #music {
+      margin: 64px 24px 0px 24px;
+      width: 52%;
+      height: 16.5vw;
+    }
+
+    .smaller {
+      margin: 96px 0px 0px 24px;
+      font-size: x-large;
+    }
+    .normal {
+      font-size: 7vw;
+      width: 70%;
+      margin: 38px 0px 0px 24px;
+    }
+  }
+
+  .shows {
+    padding: 0px 24px;
+    margin: 40px 0px;
+
+    h1 {
+      margin: 0px 0px 32px 0px;
+      font-size: 37px;
+      color: #323232;
+    }
+  }
+
+  .table {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+
+    th {
+      padding: 0px 137px 0px 0px;
+    }
+
+    tr {
+      display: table-cell;
+    }
+
+    td {
+      width: 158px;
+    }
+    .table--zero {
+      width: 78%;
+      margin-top: 16px;
+      border-spacing: 0px;
+      border-collapse: collapse;
+
+      #ghost {
+        display: none;
+        width: 3vw;
+      }
+    }
+
+    .table--one,
+    .table--two,
+    .table--three,
+    .table--four,
+    .table--five {
+      border-collapse: collapse;
+      border-spacing: 0px;
+      width: 100%;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #e1e1e1;
+    }
+
+    #button {
+      float: right;
+    }
+
+    #buyTicket {
+      font-size: 1.5vw;
+      width: 160px;
+      height: 48px;
+    }
+    #hide {
+      display: none;
+    }
+  }
+
+  .footer {
+    .footer--myfooter {
+      display: flex;
+      flex-direction: row;
+      margin-left: 24px;
+      margin-right: 24px;
+
+      .footer--myfooter__title {
+        margin: 8px 0px 8px 0px;
+        font-size: 36px;
+      }
+
+      .footer--myfooter__images {
+    align-items: flex-start;
+    width: 124px;
+    padding: 6px 20px;
+      }
+
+      .footer--myfooter__logo {
+        margin-top: 16px;
+        margin-left: auto;
+
+        img{
+          height: 109px;
+        }
+      }
+    }
+    .footer--text {
+      display: flex;
+      justify-content: space-between;
+      margin: 24px;
+    }
+    .slim--copyright {
+      margin: 24px;
+      width: 69%;
+    }
+  }
+}
+
+/*DESKTOP --------------------------------------------------*/
+
+@media screen and (min-width: 1280px) {
+header {
+    .header--logo {
+      padding: 0px 5px 0px 76px;
+    }
+
+    .header--logo img {
+      height: 7vw;
+    }
+
+    .header--right {
+      display: flex;
+    }
+
+     .sub-menu {
+    font-size: 1.5vw;
+    padding: 1.8em 0em;
+    margin: 0px 0px 0px 91px;
+    }
+  }
+
+  .showHero {
+    width: 100%;
+    height: 46.55vw;
+
+    .smaller {
+      font-size: xx-large;
+      margin: 160px 0px 0px 180px;
+    }
+
+    .normal {
+      margin: 48px 0px 0px 180px;
+      font-size: 3.6vw;
+      width: 33.4%;
+    }
+    #music {
+      width: 34.1vw;
+      height: 11.45vw;
+      margin: 70px 0px 0px 64px;
+      border-radius: 4px;
+    }
+
+    .normalMusic {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  .shows {
+    display: flex;
+    padding: 0px 180px;
+    margin: 48px 0px;
+
+    .table {
+      display: block;
+      margin: 0px 0px 0px 120px;
+
+      th {
+        padding-right: 10vw;
+      }
+
+      #buyTicket {
+        font-size: 1vw;
+        min-width: 160px;
+      }
+    }
+  }
+
+  .footer {
+    .footer--myfooter {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-left: 180px;
+      margin-right: 180px;
+
+      .footer--myfooter__title {
+        margin: 8px 30px 8px 0px;
+        font-size: 2.7vw;
+      }
+
+      .footer--myfooter__images {
+        padding-left: 8px;
+        display: flex;
+        justify-content: space-between;
+        width: 16%;
+        margin: 16px 0px;
+
+        img {
+          margin-left: 16px;
+        }
+      }
+
+      .footer--myfooter__logo {
+        justify-self: flex-end;
+        width: 120px;
+        margin-top: 8px;
+        margin-left: auto;
+      }
+    }
+    .footer--text {
+      display: flex;
+      justify-content: space-between;
+      width: 53%;
+      margin: 32px 180px 24px 180px;
+
+      .thick {
+        margin: 16px 0px;
+      }
+      .slim {
+        margin: 16px 0px 16px 0px;
+      }
+    }
+    .slim--copyright {
+      margin: 24px 0px 0px 180px;
+      width: 69%;
+    }
+  }
+}

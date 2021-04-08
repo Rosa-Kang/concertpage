@@ -1,0 +1,285 @@
+@import "basicStyle";
+
+/* MOBILE ---------------- ------------ MOBILE MOBILE MOBILE */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #323232;
+  justify-content: center;
+
+  .header--logo {
+    text-align: center;
+    width: 50%;
+    padding-top: 5px;
+  }
+
+  .header--logo img {
+    height: 25vw;
+  }
+
+  .header--right {
+    width: 100%;
+    display: flex;
+  }
+
+  .sub-menu {
+    padding: 1rem;
+    font-size: 4vw;
+    width: 50%;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .header--right .sub-menu:hover {
+    border-bottom: solid #ffffff;
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 47vw;
+  background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url(../images/Images/concert2.jpg);
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
+  h1 {
+    color: white;
+  }
+}
+
+h1 {
+  font-size: 6.5vw;
+  font-family: mybold;
+  margin: 32px 16px 24px 16px;
+}
+
+.perform {
+  @extend %leftRight;
+
+  .perform__img {
+    width: 100%;
+  }
+}
+
+.phrase {
+  h2 {
+    font-family: myDemi;
+    font-size: 5vw;
+    @extend %leftRight;
+  }
+  .phrase--one {
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
+
+  .phrase--two {
+    font-family: myTB;
+    font-size: 4.5vw;
+    margin-top: 32px;
+    margin-bottom: 40px;
+  }
+
+  .phrase--three {
+    margin-top: 32px;
+    margin-bottom: 24px;
+  }
+
+  .phrase--four {
+    margin: 24px 16px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+h4 {
+  font-size: 3.9vw;
+  margin: 0px 0px 24px 0px;
+}
+
+.gallery {
+  background-color: #fafafa;
+  padding-top: 32px;
+
+  h1 {
+    margin: 0px 16px 24px 16px;
+  }
+
+  .gallery--img {
+    display: flex;
+    flex-flow: column;
+    margin: 16px 16px 0px 16px;
+    .gallery--img__bottom {
+      padding-bottom: 24px;
+    }
+  }
+  img {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+.comment {
+  h5 {
+    margin: 0px;
+  }
+  .comment--new {
+    margin: 16px 16px 0px 16px;
+    padding-bottom: 31px;
+    display: flex;
+    border-bottom: solid 1px #e1e1e1;
+
+    .comment--new__name {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 0px 16px;
+      float: right;
+
+      label {
+        font-family: myTableHead;
+        color: #afafaf;
+        font-size: small;
+        margin-bottom: 6px;
+      }
+
+      input:focus,
+      textarea:focus {
+        border: solid 1.5px #323232 !important;
+        outline: none;
+      }
+
+      #inputName,
+      #inputComment {
+        padding: 0px;
+        margin-bottom: 10px;
+        background-color: #fafafa;
+        border: solid 1px #e1e1e1;
+        border-radius: 4px;
+      }
+
+      #inputName {
+        height: 32px;
+      }
+
+      #myButton {
+        padding: 0px;
+        height: 42px;
+        font-size: smaller;
+        background-color: #323232;
+        color: white;
+        border-radius: 4px;
+      }
+    }
+  }
+  img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  #addComment {
+    margin: 0px 16px !important;
+  }
+
+  #addComment,
+  #existingComment {
+    font-size: 4.345vw;
+    margin: 0px 16px 40px 16px;
+    display: flex;
+    flex-direction: column;
+
+    .existingBox {
+      display: flex;
+      padding: 24px 0px;
+      border-bottom: solid 1px #e1e1e1;
+
+      #avatar {
+        padding-right: 16px;
+      }
+
+      #letters {
+        width: 100%;
+      }
+      #nameDate {
+        display: flex;
+        justify-content: space-between;
+        font-family: myDemi;
+      }
+
+      #date {
+        color: #afafaf;
+      }
+    }
+    #text {
+      margin: 16px 0px 0px 0px;
+    }
+  }
+}
+
+.footer {
+  background-color: #323232;
+  color: white;
+  padding: 40px 0px;
+
+  .footer--myfooter__title {
+    font-family: myBold;
+    margin: 0px 16px 24px 12px;
+  }
+
+  .footer--myfooter__images {
+    display: flex;
+    margin: 16px;
+    justify-content: space-between;
+    width: 37%;
+  }
+
+  .footer--text {
+    margin: 32px 16px 24px 12px;
+    font-size: 0.9em;
+
+    .thick {
+      font-family: myDemi;
+      margin: 1em 0em;
+    }
+    .slim {
+      margin: 1em 0em;
+    }
+  }
+
+  .slim--copyright {
+    margin: 32px 16px 24px 12px;
+    width: 67%;
+    font-size: 0.9em;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 388px) {
+  .comment--new__name {
+    width: 78% !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer--myfooter__logo {
+    display: none;
+  }
+}
+
+/* In the Tablet */
+@import "tablet.scss";
+
+/* In the Desktop */
+@import "desktop.scss";

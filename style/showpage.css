@@ -1,0 +1,527 @@
+@font-face {
+  font-family: Avenir;
+  src: url("../Images-2/Font/Linotype - AvenirNextLTPro-UltLt.otf");
+}
+
+@font-face {
+  font-family: myBold;
+  src: url("../Images-2/Font/Linotype - AvenirNextLTPro-Bold.otf");
+}
+
+@font-face {
+  font-family: myDemi;
+  src: url("../Images-2/Font/Linotype - AvenirNextLTPro-Medium.otf");
+}
+
+@font-face {
+  font-family: myTB;
+  src: url("../Images-2/Font/Linotype - AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: myTableHead;
+  src: url("../Images-2/Font/Linotype - AvenirNextLTPro-Medium.otf");
+}
+
+@font-face {
+  font-family: mySpan;
+  src: url("../Images-2/Font/Linotype - AvenirNextLTPro-Bold.otf");
+}
+
+@font-face {
+  font-family: myTableData;
+  src: url("../Images-2/Font/Linotype - AvenirNextLTPro-Thin.otf");
+}
+
+body {
+  font-family: Avenir;
+  margin: 0px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #323232;
+  min-height: 80px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .header--logo {
+  text-align: center;
+  width: 50%;
+  padding-top: 5px;
+}
+
+header .header--logo img {
+  height: 25vw;
+}
+
+header .header--right {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .sub-menu {
+  padding: 1rem;
+  font-size: 4vw;
+  width: 50%;
+  text-align: center;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header .sub-menu:hover {
+  border-bottom: solid #ffffff;
+}
+
+.showHero {
+  width: 100%;
+  height: 147.5vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.5)), to(rgba(50, 50, 50, 0.5))), url(../images/hanny-naibaho-273756-unsplash.jpg);
+  background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url(../images/hanny-naibaho-273756-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.showHero span {
+  color: white;
+  font-family: mySpan;
+}
+
+.showHero .smaller {
+  font-family: myTableHead;
+  font-size: 16px;
+  margin: 64px 0px 0px 16px;
+}
+
+.showHero .normal {
+  font-size: 10.5vw;
+  width: 90%;
+  margin: 16px 0px 0px 16px;
+}
+
+.showHero #music {
+  margin: 64px auto 0px;
+  width: 91%;
+  height: 30vw;
+  text-align: center;
+}
+
+.showHero .normalMusic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.shows {
+  margin: 0px 16px;
+}
+
+.shows h1 {
+  font-size: 6.5vw;
+  font-family: mySpan;
+  margin: 32px 0px 40px 0px;
+}
+
+.shows .table {
+  display: block;
+  font-size: small;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.shows .table .table--summary {
+  margin-bottom: 32px;
+  padding: 0px;
+}
+
+.shows .table .table--summary .table--one {
+  width: 100%;
+  margin-top: 16px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.shows .table th {
+  font-family: myTableHead;
+  color: #afafaf;
+}
+
+.shows .table tr {
+  text-align: left;
+}
+
+.shows .table td {
+  padding: 16px 0px 24px 0px;
+  font-family: myTableData;
+}
+
+.shows .table #fontDate {
+  font-family: myTableHead;
+  color: black;
+}
+
+.shows #buyTable {
+  padding: 0;
+}
+
+.shows #buyTicket {
+  width: 100%;
+  height: 48px;
+  margin: 8px 0px 16px 0px;
+  font-size: 4vw;
+  background-color: #323232;
+  color: white;
+  border-radius: 4px;
+}
+
+.footer {
+  background-color: #323232;
+  color: white;
+  padding: 40px 0px;
+}
+
+.footer .footer--myfooter__title {
+  font-family: myBold;
+  margin: 0px 16px 24px 12px;
+}
+
+.footer .footer--myfooter__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 16px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 37%;
+}
+
+.footer .footer--text {
+  margin: 32px 16px 24px 12px;
+  font-size: 0.9em;
+}
+
+.footer .footer--text .thick {
+  font-family: myDemi;
+  margin: 1em 0em;
+}
+
+.footer .footer--text .slim {
+  margin: 1em 0em;
+}
+
+.footer .slim--copyright {
+  margin: 32px 16px 24px 12px;
+  width: 67%;
+  font-size: 0.9em;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .table--zero {
+    display: none;
+  }
+  .footer--myfooter__logo {
+    display: none;
+  }
+}
+
+/*TABLET --------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+  header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0px 0px 0px 24px;
+  }
+  header .header--logo {
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+  }
+  header .header--logo img {
+    height: 7vw;
+  }
+  header .sub-menu {
+    font-size: 2.2vw;
+    padding: 1.1em 0em;
+    width: unset;
+    margin: 0px 0px 0px 50px;
+  }
+  .showHero {
+    width: 100%;
+    height: 87.3vw;
+  }
+  .showHero #music {
+    margin: 64px 24px 0px 24px;
+    width: 52%;
+    height: 16.5vw;
+  }
+  .showHero .smaller {
+    margin: 96px 0px 0px 24px;
+    font-size: x-large;
+  }
+  .showHero .normal {
+    font-size: 7vw;
+    width: 70%;
+    margin: 38px 0px 0px 24px;
+  }
+  .shows {
+    padding: 0px 24px;
+    margin: 40px 0px;
+  }
+  .shows h1 {
+    margin: 0px 0px 32px 0px;
+    font-size: 37px;
+    color: #323232;
+  }
+  .table {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+  .table th {
+    padding: 0px 137px 0px 0px;
+  }
+  .table tr {
+    display: table-cell;
+  }
+  .table td {
+    width: 158px;
+  }
+  .table .table--zero {
+    width: 78%;
+    margin-top: 16px;
+    border-spacing: 0px;
+    border-collapse: collapse;
+  }
+  .table .table--zero #ghost {
+    display: none;
+    width: 3vw;
+  }
+  .table .table--one,
+  .table .table--two,
+  .table .table--three,
+  .table .table--four,
+  .table .table--five {
+    border-collapse: collapse;
+    border-spacing: 0px;
+    width: 100%;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  .table #button {
+    float: right;
+  }
+  .table #buyTicket {
+    font-size: 1.5vw;
+    width: 160px;
+    height: 48px;
+  }
+  .table #hide {
+    display: none;
+  }
+  .footer .footer--myfooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .footer .footer--myfooter .footer--myfooter__title {
+    margin: 8px 0px 8px 0px;
+    font-size: 36px;
+  }
+  .footer .footer--myfooter .footer--myfooter__images {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 124px;
+    padding: 6px 20px;
+  }
+  .footer .footer--myfooter .footer--myfooter__logo {
+    margin-top: 16px;
+    margin-left: auto;
+  }
+  .footer .footer--myfooter .footer--myfooter__logo img {
+    height: 109px;
+  }
+  .footer .footer--text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 24px;
+  }
+  .footer .slim--copyright {
+    margin: 24px;
+    width: 69%;
+  }
+}
+
+/*DESKTOP --------------------------------------------------*/
+@media screen and (min-width: 1280px) {
+  header .header--logo {
+    padding: 0px 5px 0px 76px;
+  }
+  header .header--logo img {
+    height: 7vw;
+  }
+  header .header--right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .sub-menu {
+    font-size: 1.5vw;
+    padding: 1.8em 0em;
+    margin: 0px 0px 0px 91px;
+  }
+  .showHero {
+    width: 100%;
+    height: 46.55vw;
+  }
+  .showHero .smaller {
+    font-size: xx-large;
+    margin: 160px 0px 0px 180px;
+  }
+  .showHero .normal {
+    margin: 48px 0px 0px 180px;
+    font-size: 3.6vw;
+    width: 33.4%;
+  }
+  .showHero #music {
+    width: 34.1vw;
+    height: 11.45vw;
+    margin: 70px 0px 0px 64px;
+    border-radius: 4px;
+  }
+  .showHero .normalMusic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .shows {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0px 180px;
+    margin: 48px 0px;
+  }
+  .shows .table {
+    display: block;
+    margin: 0px 0px 0px 120px;
+  }
+  .shows .table th {
+    padding-right: 10vw;
+  }
+  .shows .table #buyTicket {
+    font-size: 1vw;
+    min-width: 160px;
+  }
+  .footer .footer--myfooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+  .footer .footer--myfooter .footer--myfooter__title {
+    margin: 8px 30px 8px 0px;
+    font-size: 2.7vw;
+  }
+  .footer .footer--myfooter .footer--myfooter__images {
+    padding-left: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 16%;
+    margin: 16px 0px;
+  }
+  .footer .footer--myfooter .footer--myfooter__images img {
+    margin-left: 16px;
+  }
+  .footer .footer--myfooter .footer--myfooter__logo {
+    justify-self: flex-end;
+    width: 120px;
+    margin-top: 8px;
+    margin-left: auto;
+  }
+  .footer .footer--text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 53%;
+    margin: 32px 180px 24px 180px;
+  }
+  .footer .footer--text .thick {
+    margin: 16px 0px;
+  }
+  .footer .footer--text .slim {
+    margin: 16px 0px 16px 0px;
+  }
+  .footer .slim--copyright {
+    margin: 24px 0px 0px 180px;
+    width: 69%;
+  }
+}
+/*# sourceMappingURL=showpage.css.map */
