@@ -1,38 +1,3 @@
-@font-face {
-  font-family: Avenir;
-  src: url("../Images-2/Images/Linotype - AvenirNextLTPro-UltLt.otf");
-}
-
-@font-face {
-  font-family: myBold;
-  src: url("../Images-2/Images/Linotype - AvenirNextLTPro-Bold.otf");
-}
-
-@font-face {
-  font-family: myDemi;
-  src: url("../Images-2/Images/Linotype - AvenirNextLTPro-Medium.otf");
-}
-
-@font-face {
-  font-family: myTB;
-  src: url("../Images-2/Images/Linotype - AvenirNextLTPro-Regular.otf");
-}
-
-@font-face {
-  font-family: myTableHead;
-  src: url("../images/Font/Linotype - AvenirNextLTPro-Medium.otf");
-}
-
-@font-face {
-  font-family: mySpan;
-  src: url("../images/Font/Linotype - AvenirNextLTPro-Bold.otf");
-}
-
-@font-face {
-  font-family: myTableData;
-  src: url("../images/Font/Linotype - AvenirNextLTPro-Thin.otf");
-}
-
 .perform, .phrase h2 {
   margin-left: 16px;
   margin-right: 16px;
